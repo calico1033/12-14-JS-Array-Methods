@@ -1,4 +1,4 @@
-[
+const states = [
     {
       name: "Alabama",
       capital: "Montgomery",
@@ -300,3 +300,12 @@
       long: "-104.802042"
     }
   ]
+
+
+//   Create an array called allCapitalsA with all the states with capitals that start with the letter A.
+    const allCapitalsA = states.filter(element => element.capital.charAt(0) === "A")
+  console.log(allCapitalsA);
+
+//   Create a array called allStatesTwoWords with all the states with two words in their name.
+  const allStatesTwoWords = states.filter(element => element.name.split(' ').length === 2)
+  console.log(allStatesTwoWords);
